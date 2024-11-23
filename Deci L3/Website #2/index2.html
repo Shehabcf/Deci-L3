@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery Deci Session1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Pizza Delivery</h1>
+
+    <form id="orderForm">
+        <h2>User Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <h2>Customize Your Pizza</h2>
+        <label for="size">Pizza Size:</label>
+        <select id="size" name="size" required>
+            <option value="small" data-price="8">Small - $8</option>
+            <option value="medium" data-price="12">Medium - $12</option>
+            <option value="large" data-price="16">Large - $16</option>
+        </select>
+
+        <fieldset>
+            <legend>Toppings ($2 each):</legend>
+            <label><input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni</label>
+            <label><input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms</label>
+            <label><input type="checkbox" name="toppings" value="Onions"> Onions</label>
+            <label><input type="checkbox" name="toppings" value="Sausage"> Sausage</label>
+            <label><input type="checkbox" name="toppings" value="Bacon"> Bacon</label>
+        </fieldset>
+
+        <div id="total">
+            <h3>Total: $0</h3>
+        </div>
+
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>
